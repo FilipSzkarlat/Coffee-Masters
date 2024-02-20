@@ -1,0 +1,74 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(233, 230, 230);
+  color: rgb(178, 137, 137);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(34, 1, 1, 0.829);
+  color: rgb(253, 244, 185);
+}
+
+header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* MAIN */
+/* items container */
+.items-container {
+  padding: 10px;
+  background-color: rgb(229, 214, 194);
+  width: 50%;
+  margin: 40px 40px 40px 25px;
+  border-radius: 10px;
+}
+
+.item {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 30px 1fr 50px;
+  grid-template-areas:
+    "quantity product price"
+    ". description .";
+  border-bottom: 1px solid rgb(178, 137, 137);
+}
+
+.item:last-child {
+  border: none;
+}
+
+.quantity,
+.product,
+.price {
+  color: black;
+}
+
+.quantity {
+  grid-area: quantity;
+}
+
+.product {
+  grid-area: product;
+}
+
+.description {
+  grid-area: description;
+  margin-bottom: 10px;
+}
+
+.price {
+  grid-area: price;
+}
