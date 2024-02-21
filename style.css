@@ -26,12 +26,22 @@ header img {
 }
 
 /* MAIN */
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.right-col,
+.left-col {
+  width: 45%;
+}
+
 /* items container */
-.items-container {
+.box-container {
+  margin: 20px;
   padding: 10px;
   background-color: rgb(229, 214, 194);
-  width: 50%;
-  margin: 40px 40px 40px 25px;
   border-radius: 10px;
 }
 
@@ -71,4 +81,58 @@ header img {
 
 .price {
   grid-area: price;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  line-height: 25px;
+}
+
+input {
+  border: 1px solid rgb(178, 137, 137);
+  border-radius: 15px;
+  padding: 7px;
+  width: 100%;
+  background-color: rgb(229, 214, 194);
+  text-indent: 18px;
+}
+
+.box-container input:last-child {
+  margin-bottom: 20px;
+}
+
+.short-input {
+  max-width: 130px;
+}
+
+label {
+  font-size: 0.7rem;
+  position: relative;
+  top: 7px;
+  left: 20px;
+  background-color: rgb(229, 214, 194);
+  padding: 0 5px;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  color: black;
+  margin-top: 7px;
+}
+
+.summary-item:last-child {
+  font-weight: 700;
+  margin-top: 15px;
 }
